@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TNFD LEAP Framework
 
-## Getting Started
+> 自然相关财务信息披露自动化工作台
 
-First, run the development server:
+[![GitHub stars](https://img.shields.io/github/stars/newversionparty-cn/-)](https://github.com/newversionparty-cn/-)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+## 项目简介
+
+TNFD LEAP 是基于 **TNFD v1.0 框架** 和 **LEAP 方法论**（Locate → Evaluate → Assess → Prepare）构建的自动化披露工具，帮助中国 NGO 和中小企业快速完成自然相关财务信息披露。
+
+## 核心功能
+
+| 步骤 | 模块 | 说明 |
+|------|------|------|
+| **L** | 定位资产 | CSV 批量上传 / 地图搜索 / 点击选点，自动识别保护区（WDPA） |
+| **E** | 行业评价 | 基于 ENCORE 数据库，分析行业自然资本依赖度与影响驱动因素 |
+| **A** | AI 评估 | Qwen 大模型推理，输出 TNFD 风险与机遇分析报告 |
+| **P** | 报告生成 | 一键导出符合 TNFD v1.0 框架的 PDF 披露报告 |
+
+## 技术栈
+
+- **前端框架**: Next.js 16 + TypeScript + App Router
+- **样式**: Tailwind CSS + 自定义设计系统（森林绿 + 暖米色）
+- **状态管理**: Zustand
+- **地图**: react-leaflet + OpenStreetMap / ESRI 底图
+- **数据**: ENCORE (2025 Sep) + WDPA API
+- **AI**: Qwen（阿里云百炼兼容 OpenAI SDK）
+- **PDF**: html2pdf.js
+
+## 快速开始
 
 ```bash
+# 克隆仓库
+git clone https://github.com/newversionparty-cn/-.git
+cd -
+
+# 安装依赖
+npm install
+
+# 启动开发服务器
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# 打开 http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 数据来源
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **自然资本依赖与影响**: [ENCORE Database](https://encoreforcapital.org/) (Sep 2025)
+- **保护区交叉验证**: [WDPA - World Database on Protected Areas](https://www.protectedplanet.net/)
+- **地图底图**: [ESRI World Imagery / World Topo Map](https://www.esri.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 数据说明
 
-## Learn More
+本工具处理的所有数据均在本地浏览器中完成，不会上传至任何第三方服务器。
 
-To learn more about Next.js, take a look at the following resources:
+## 免责声明
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+风险评估结果由 AI 模型生成，仅供参考。实际披露前建议咨询专业 ESG 顾问。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 致谢
 
-## Deploy on Vercel
+- [TNFD](https://tnfd.global/) - Taskforce on Nature-related Financial Disclosures
+- [ENCORE](https://encoreforcapital.org/) - Exploring Natural Capital Opportunities, Risks and Exposure
+- [Protected Planet](https://www.protectedplanet.net/) - UNEP-WCMC
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License · 用爱开发，为地球所用
