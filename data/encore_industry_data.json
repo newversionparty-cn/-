@@ -1,0 +1,1161 @@
+{
+  "version": "Sept 2025",
+  "source": "ENCORE - encoreforcapital.org",
+  "by_section": {
+    "Agriculture, forestry and fishing": [
+      {
+        "industry": "Raising of cattle and buffaloes",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Water supply"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Raising of horses and other equines",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Water supply"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Raising of camels and camelids",
+        "dependencies": [
+          "Biomass provisioning",
+          "Water purification",
+          "Soil quality regulation",
+          "Water supply",
+          "Storm mitigation"
+        ],
+        "impacts": [
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste"
+        ]
+      },
+      {
+        "industry": "Raising of sheep and goats",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Water supply"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Raising of other animals",
+        "dependencies": [
+          "Biomass provisioning",
+          "Water purification",
+          "Soil quality regulation",
+          "Water supply",
+          "Storm mitigation"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Raising of swine/pigs",
+        "dependencies": [
+          "Biomass provisioning",
+          "Water purification",
+          "Soil quality regulation",
+          "Water supply",
+          "Storm mitigation"
+        ],
+        "impacts": [
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Raising of poultry",
+        "dependencies": [
+          "Biomass provisioning",
+          "Water purification",
+          "Storm mitigation",
+          "Water flow regulation",
+          "Rainfall pattern regulation"
+        ],
+        "impacts": [
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Growing of cereals (except rice), leguminous crops and oil seeds",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Biological control"
+        ],
+        "impacts": [
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Growing of rice ",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Biological control"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Growing of vegetables and melons, roots and tubers",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Biological control"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Growing of sugar cane",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Biological control"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Growing of tobacco",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Biological control"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Growing of fibre crops",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Biological control"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste"
+        ]
+      },
+      {
+        "industry": "Growing of other non-perennial crops ",
+        "dependencies": [
+          "Biomass provisioning",
+          "Soil and sediment retention",
+          "Water purification",
+          "Soil quality regulation",
+          "Biological control"
+        ],
+        "impacts": [
+          "Area of freshwater use",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Post-harvest crop activities",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Water flow regulation",
+          "Education, scientific and research services",
+          "Spiritual, artistic and symbolic services"
+        ],
+        "impacts": [
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Generation and release of solid waste",
+          "Area of land use",
+          "Volume of water use"
+        ]
+      },
+      {
+        "industry": "Seed processing for propagation",
+        "dependencies": [
+          "Biomass provisioning",
+          "Water purification",
+          "Genetic material",
+          "Water supply",
+          "Education, scientific and research services"
+        ],
+        "impacts": [
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Area of land use",
+          "Volume of water use"
+        ]
+      },
+      {
+        "industry": "Support activities for crop production",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Rainfall pattern regulation",
+          "Education, scientific and research services",
+          "Spiritual, artistic and symbolic services"
+        ],
+        "impacts": [
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Support activities for animal production",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Education, scientific and research services"
+        ],
+        "impacts": [
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Emissions of nutrient soil and water pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      }
+    ],
+    "Manufacturing": [
+      {
+        "industry": "Manufacture of basic chemicals",
+        "dependencies": [],
+        "impacts": [
+          "Disturbances (e.g noise, light)",
+          "Emissions of toxic soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Manufacture of plastics and synthetic rubber in primary forms",
+        "dependencies": [],
+        "impacts": [
+          "Disturbances (e.g noise, light)",
+          "Emissions of toxic soil and water pollutants",
+          "Volume of water use"
+        ]
+      },
+      {
+        "industry": "Manufacture of fertilizers and nitrogen compounds",
+        "dependencies": [
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": [
+          "Disturbances (e.g noise, light)",
+          "Emissions of toxic soil and water pollutants",
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Distilling, rectifying and blending of spirits",
+        "dependencies": [
+          "Water purification",
+          "Genetic material",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Manufacture of malt liquors and malt",
+        "dependencies": [
+          "Water purification",
+          "Genetic material",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Manufacture of wines",
+        "dependencies": [
+          "Water purification",
+          "Genetic material",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Manufacture of soft drinks; production of mineral waters and other bottled waters",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": [
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Manufacture of vegetable and animal oils and fats",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": [
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Processing and preserving of fish, crustaceans and molluscs",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": [
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      },
+      {
+        "industry": "Processing and preserving of fruit and vegetables",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Processing and preserving of meat",
+        "dependencies": [
+          "Water purification",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": [
+          "Emissions of nutrient soil and water pollutants"
+        ]
+      }
+    ],
+    "Electricity, gas, steam and air conditioning supply": [
+      {
+        "industry": "Fossil fuels energy production ",
+        "dependencies": [
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Nuclear power production",
+        "dependencies": [
+          "Soil and sediment retention",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": [
+          "Generation and release of solid waste"
+        ]
+      },
+      {
+        "industry": "Hydropower energy production",
+        "dependencies": [
+          "Soil and sediment retention",
+          "Flood mitigation services",
+          "Water supply",
+          "Water flow regulation"
+        ],
+        "impacts": [
+          "Disturbances (e.g noise, light)",
+          "Area of freshwater use"
+        ]
+      },
+      {
+        "industry": "Geothermal energy production",
+        "dependencies": [
+          "Soil and sediment retention"
+        ],
+        "impacts": [
+          "Emissions of non-GHG air pollutants"
+        ]
+      },
+      {
+        "industry": "Solar energy production",
+        "dependencies": [
+          "Global climate regulation"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Wind energy production",
+        "dependencies": [
+          "Flood mitigation services",
+          "Global climate regulation"
+        ],
+        "impacts": [
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Biomass energy production",
+        "dependencies": [
+          "Biomass provisioning"
+        ],
+        "impacts": [
+          "Disturbances (e.g noise, light)",
+          "Emissions of GHG",
+          "Emissions of non-GHG air pollutants",
+          "Generation and release of solid waste",
+          "Area of land use"
+        ]
+      },
+      {
+        "industry": "Ocean energy production",
+        "dependencies": [
+          "Flood mitigation services",
+          "Water flow regulation"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Transmission and distribution of electricity",
+        "dependencies": [],
+        "impacts": []
+      }
+    ],
+    "Transportation and storage": [
+      {
+        "industry": "Service activities incidental to air transportation",
+        "dependencies": [],
+        "impacts": []
+      },
+      {
+        "industry": "Cargo handling",
+        "dependencies": [],
+        "impacts": [
+          "Introduction of invasive species"
+        ]
+      },
+      {
+        "industry": "Other transportation support activities",
+        "dependencies": [],
+        "impacts": []
+      },
+      {
+        "industry": "Service activities incidental to land transportation",
+        "dependencies": [],
+        "impacts": []
+      },
+      {
+        "industry": "Service activities incidental to water transportation",
+        "dependencies": [
+          "Flood mitigation services"
+        ],
+        "impacts": []
+      }
+    ],
+    "Administrative and support service activities": [
+      {
+        "industry": "Travel agency activities",
+        "dependencies": [
+          "Recreation related services",
+          "Visual amenity services",
+          "Education, scientific and research services",
+          "Spiritual, artistic and symbolic services"
+        ],
+        "impacts": []
+      },
+      {
+        "industry": "Tour operator activities",
+        "dependencies": [
+          "Air Filtration",
+          "Recreation related services",
+          "Visual amenity services",
+          "Education, scientific and research services",
+          "Spiritual, artistic and symbolic services"
+        ],
+        "impacts": []
+      }
+    ]
+  },
+  "industries": [
+    {
+      "industry": "Raising of cattle and buffaloes",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Water supply"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Raising of horses and other equines",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Water supply"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Raising of camels and camelids",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Water purification",
+        "Soil quality regulation",
+        "Water supply",
+        "Storm mitigation"
+      ],
+      "impacts": [
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste"
+      ]
+    },
+    {
+      "industry": "Raising of sheep and goats",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Water supply"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Raising of other animals",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Water purification",
+        "Soil quality regulation",
+        "Water supply",
+        "Storm mitigation"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Raising of swine/pigs",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Water purification",
+        "Soil quality regulation",
+        "Water supply",
+        "Storm mitigation"
+      ],
+      "impacts": [
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Raising of poultry",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Water purification",
+        "Storm mitigation",
+        "Water flow regulation",
+        "Rainfall pattern regulation"
+      ],
+      "impacts": [
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Growing of cereals (except rice), leguminous crops and oil seeds",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Biological control"
+      ],
+      "impacts": [
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Growing of rice ",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Biological control"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Growing of vegetables and melons, roots and tubers",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Biological control"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Growing of sugar cane",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Biological control"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Growing of tobacco",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Biological control"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Growing of fibre crops",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Biological control"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste"
+      ]
+    },
+    {
+      "industry": "Growing of other non-perennial crops ",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Soil and sediment retention",
+        "Water purification",
+        "Soil quality regulation",
+        "Biological control"
+      ],
+      "impacts": [
+        "Area of freshwater use",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Post-harvest crop activities",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Water flow regulation",
+        "Education, scientific and research services",
+        "Spiritual, artistic and symbolic services"
+      ],
+      "impacts": [
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Generation and release of solid waste",
+        "Area of land use",
+        "Volume of water use"
+      ]
+    },
+    {
+      "industry": "Seed processing for propagation",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Biomass provisioning",
+        "Water purification",
+        "Genetic material",
+        "Water supply",
+        "Education, scientific and research services"
+      ],
+      "impacts": [
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Area of land use",
+        "Volume of water use"
+      ]
+    },
+    {
+      "industry": "Support activities for crop production",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Rainfall pattern regulation",
+        "Education, scientific and research services",
+        "Spiritual, artistic and symbolic services"
+      ],
+      "impacts": [
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Support activities for animal production",
+      "section": "Agriculture, forestry and fishing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Education, scientific and research services"
+      ],
+      "impacts": [
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Emissions of nutrient soil and water pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Manufacture of basic chemicals",
+      "section": "Manufacturing",
+      "dependencies": [],
+      "impacts": [
+        "Disturbances (e.g noise, light)",
+        "Emissions of toxic soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Manufacture of plastics and synthetic rubber in primary forms",
+      "section": "Manufacturing",
+      "dependencies": [],
+      "impacts": [
+        "Disturbances (e.g noise, light)",
+        "Emissions of toxic soil and water pollutants",
+        "Volume of water use"
+      ]
+    },
+    {
+      "industry": "Manufacture of fertilizers and nitrogen compounds",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": [
+        "Disturbances (e.g noise, light)",
+        "Emissions of toxic soil and water pollutants",
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Distilling, rectifying and blending of spirits",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Genetic material",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Manufacture of malt liquors and malt",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Genetic material",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Manufacture of wines",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Genetic material",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Manufacture of soft drinks; production of mineral waters and other bottled waters",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": [
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Manufacture of vegetable and animal oils and fats",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": [
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Processing and preserving of fish, crustaceans and molluscs",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": [
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Processing and preserving of fruit and vegetables",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Processing and preserving of meat",
+      "section": "Manufacturing",
+      "dependencies": [
+        "Water purification",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": [
+        "Emissions of nutrient soil and water pollutants"
+      ]
+    },
+    {
+      "industry": "Fossil fuels energy production ",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Nuclear power production",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Soil and sediment retention",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": [
+        "Generation and release of solid waste"
+      ]
+    },
+    {
+      "industry": "Hydropower energy production",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Soil and sediment retention",
+        "Flood mitigation services",
+        "Water supply",
+        "Water flow regulation"
+      ],
+      "impacts": [
+        "Disturbances (e.g noise, light)",
+        "Area of freshwater use"
+      ]
+    },
+    {
+      "industry": "Geothermal energy production",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Soil and sediment retention"
+      ],
+      "impacts": [
+        "Emissions of non-GHG air pollutants"
+      ]
+    },
+    {
+      "industry": "Solar energy production",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Global climate regulation"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Wind energy production",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Flood mitigation services",
+        "Global climate regulation"
+      ],
+      "impacts": [
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Biomass energy production",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Biomass provisioning"
+      ],
+      "impacts": [
+        "Disturbances (e.g noise, light)",
+        "Emissions of GHG",
+        "Emissions of non-GHG air pollutants",
+        "Generation and release of solid waste",
+        "Area of land use"
+      ]
+    },
+    {
+      "industry": "Ocean energy production",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [
+        "Flood mitigation services",
+        "Water flow regulation"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Service activities incidental to air transportation",
+      "section": "Transportation and storage",
+      "dependencies": [],
+      "impacts": []
+    },
+    {
+      "industry": "Cargo handling",
+      "section": "Transportation and storage",
+      "dependencies": [],
+      "impacts": [
+        "Introduction of invasive species"
+      ]
+    },
+    {
+      "industry": "Other transportation support activities",
+      "section": "Transportation and storage",
+      "dependencies": [],
+      "impacts": []
+    },
+    {
+      "industry": "Service activities incidental to land transportation",
+      "section": "Transportation and storage",
+      "dependencies": [],
+      "impacts": []
+    },
+    {
+      "industry": "Service activities incidental to water transportation",
+      "section": "Transportation and storage",
+      "dependencies": [
+        "Flood mitigation services"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Travel agency activities",
+      "section": "Administrative and support service activities",
+      "dependencies": [
+        "Recreation related services",
+        "Visual amenity services",
+        "Education, scientific and research services",
+        "Spiritual, artistic and symbolic services"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Tour operator activities",
+      "section": "Administrative and support service activities",
+      "dependencies": [
+        "Air Filtration",
+        "Recreation related services",
+        "Visual amenity services",
+        "Education, scientific and research services",
+        "Spiritual, artistic and symbolic services"
+      ],
+      "impacts": []
+    },
+    {
+      "industry": "Transmission and distribution of electricity",
+      "section": "Electricity, gas, steam and air conditioning supply",
+      "dependencies": [],
+      "impacts": []
+    }
+  ]
+}

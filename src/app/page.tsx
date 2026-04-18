@@ -1,65 +1,74 @@
-import Image from "next/image";
+'use client'
+
+import { LeapNavigation, Locate, Evaluate, Assess, Prepare } from '@/components/leap'
+import { useLeapStore } from '@/store/leap-store'
 
 export default function Home() {
+  const { currentStep } = useLeapStore()
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="min-h-screen relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="fixed inset-0 -z-10">
+        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[#2d5a3d]/5 via-[#4a7c59]/3 to-transparent rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-[#c9a962]/5 via-[#d4736a]/3 to-transparent rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-[#faf8f5]" />
+      </div>
+
+      {/* Header */}
+      <header className="relative py-6 px-8 border-b border-[#e5e0d8]">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-4">
+              {/* Logo mark */}
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#2d5a3d] to-[#4a7c59] flex items-center justify-center shadow-lg">
+                <svg className="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <div>
+                <h1 className="text-2xl font-semibold text-[#1a1a18]" style={{ fontFamily: 'Cormorant Garamond, Georgia, serif' }}>
+                  TNFD LEAP
+                </h1>
+                <p className="text-xs text-[#8a8a7e] uppercase tracking-[0.2em]">
+                  自然相关财务信息披露
+                </p>
+              </div>
+            </div>
+
+            {/* Status badge */}
+            <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#2d5a3d]/5 border border-[#2d5a3d]/20">
+              <span className="w-2 h-2 rounded-full bg-[#4a7c59] animate-pulse" />
+              <span className="text-sm text-[#2d5a3d] font-medium">v1.0</span>
+            </div>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      {/* Navigation */}
+      <LeapNavigation />
+
+      {/* Main Content */}
+      <main className="flex-1 relative">
+        <div className="animate-fade-in-up">
+          {currentStep === 'locate' && <Locate />}
+          {currentStep === 'evaluate' && <Evaluate />}
+          {currentStep === 'assess' && <Assess />}
+          {currentStep === 'prepare' && <Prepare />}
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="relative py-6 px-8 border-t border-[#e5e0d8] bg-[#f0ebe4]/50">
+        <div className="max-w-6xl mx-auto flex items-center justify-between">
+          <p className="text-sm text-[#8a8a7e]">
+            TNFD LEAP Framework · 开源工具 · 数据仅本地处理
+          </p>
+          <p className="text-xs text-[#8a8a7e]">
+            基于 ENCORE 数据库 (2025年9月版)
+          </p>
+        </div>
+      </footer>
     </div>
-  );
+  )
 }
