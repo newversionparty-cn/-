@@ -13,11 +13,9 @@ TNFD LEAP 是基于 **TNFD v1.0 框架** 和 **LEAP 方法论**（Locate → Eva
 
 | L - 定位资产 | E - 行业评价 |
 |:---:|:---:|
-| ![L - 定位资产](public/screenshots/01-locate.png) | ![E - 行业评价](public/screenshots/02-evaluate.png) |
+| ![L - 定位资产](public/screenshots/01-locate-new.png) | ![E - 行业评价](public/screenshots/02-evaluate-new.png) |
 
-| A - AI 评估 | P - 报告生成 |
-|:---:|:---:|
-| ![A - AI 评估](public/screenshots/03-assess.png) | ![P - 报告生成](public/screenshots/04-prepare.png) |
+> **A（评估）** 和 **P（准备）** 需完成前置步骤后访问，运行 AI 分析后生成 TNFD 风险报告与 PDF 导出功能
 
 ## 核心功能
 
