@@ -3,7 +3,7 @@
 import { useCallback, useState, useEffect, useRef } from 'react'
 import dynamic from 'next/dynamic'
 import { Upload, MapPin, AlertTriangle, Shield, Globe, Search, Crosshair, Trash2, Plus, Check } from 'lucide-react'
-import { useLeapStore, AssetLocation } from '@/store/leap-store'
+import { useLeapStore, AssetLocation, AssetProtection } from '@/store/leap-store'
 import Papa from 'papaparse'
 
 const AssetMap = dynamic(() => import('./AssetMap'), {
@@ -36,17 +36,44 @@ async function geocodeLocation(query: string): Promise<{ lat: number; lng: numbe
   return null
 }
 
-// WDPA API check
-async function checkProtectedArea(lat: number, lng: number): Promise<boolean> {
+// WDPA API check - returns protection status with distance
+async function checkProtectedArea(lat: number, lng: number): Promise<AssetProtection> {
+  const NEAR_THRESHOLD_KM = 50
   try {
+    // Request 5 nearest protected areas to get distance info
     const response = await fetch(
-      `https://api.protectedplanet.net/v1/protected-areas?lat=${lat}&lon=${lng}&per_page=1`
+      `https://api.protectedplanet.net/v1/protected-areas?lat=${lat}&lon=${lng}&per_page=5`
     )
-    if (!response.ok) return false
+    if (!response.ok) {
+      return { inProtected: false, nearProtected: false, distance: -1 }
+    }
     const data = await response.json()
-    return data.total > 0
+
+    if (data.total === 0) {
+      return { inProtected: false, nearProtected: false, distance: -1 }
+    }
+
+    // Check results for distance - calculated_distance_value is distance to boundary in km
+    let minDistance = Infinity
+    let inProtected = false
+    let nearProtected = false
+
+    for (const pa of data.results || []) {
+      const dist = pa.calculated_distance_value
+      if (dist !== undefined && dist !== null) {
+        if (dist < minDistance) minDistance = dist
+        if (dist <= 0) inProtected = true  // 0 or negative = inside
+        if (dist > 0 && dist <= NEAR_THRESHOLD_KM) nearProtected = true
+      }
+    }
+
+    return {
+      inProtected,
+      nearProtected: nearProtected || (minDistance !== Infinity && minDistance <= NEAR_THRESHOLD_KM),
+      distance: minDistance === Infinity ? -1 : Math.round(minDistance * 10) / 10,
+    }
   } catch {
-    return false
+    return { inProtected: false, nearProtected: false, distance: -1 }
   }
 }
 
@@ -61,12 +88,11 @@ interface LocateProps {
 }
 
 export default function Locate() {
-  const { assets, setAssets, setStep } = useLeapStore()
+  const { assets, setAssets, setStep, assetProtections, setAssetProtections } = useLeapStore()
   const [error, setError] = useState<string>('')
   const [isDragging, setIsDragging] = useState(false)
   const [selectedAssetId, setSelectedAssetId] = useState<string | undefined>()
   const [isCheckingProtection, setIsCheckingProtection] = useState(false)
-  const [protectionStatus, setProtectionStatus] = useState<Record<string, boolean>>({})
 
   // Manual input state
   const [manualName, setManualName] = useState('')
@@ -109,17 +135,13 @@ export default function Locate() {
 
         // Check WDPA for each
         setIsCheckingProtection(true)
-        const protectionResults: Record<string, boolean> = {}
+        const protectionResults: Record<string, AssetProtection> = {}
         await Promise.all(
           parsed.map(async (asset) => {
-            try {
-              protectionResults[asset.id] = await checkProtectedArea(asset.lat, asset.lng)
-            } catch {
-              protectionResults[asset.id] = false
-            }
+            protectionResults[asset.id] = await checkProtectedArea(asset.lat, asset.lng)
           })
         )
-        setProtectionStatus((prev) => ({ ...prev, ...protectionResults }))
+        setAssetProtections(protectionResults)
         setIsCheckingProtection(false)
         setAssets(parsed)
       },
@@ -184,8 +206,8 @@ export default function Locate() {
       sensitivity: 'medium',
     }
 
-    const isProtected = await checkProtectedArea(result.lat, result.lng)
-    setProtectionStatus((prev) => ({ ...prev, [id]: isProtected }))
+    const protection = await checkProtectedArea(result.lat, result.lng)
+    setAssetProtections({ ...assetProtections, [id]: protection })
     setAssets([...assets, newAsset])
     setManualName('')
     setGeocodeResults([])
@@ -215,14 +237,14 @@ export default function Locate() {
     }
 
     const isProtected = await checkProtectedArea(lat, lng)
-    setProtectionStatus((prev) => ({ ...prev, [id]: isProtected }))
+    setAssetProtections({ ...assetProtections, [id]: isProtected })
     setAssets([...assets, newAsset])
     setManualName('')
     setManualLat('')
     setManualLng('')
     setClickedPoint(null)
     setError('')
-  }, [assets, manualName, manualLat, manualLng, setAssets])
+  }, [assets, manualName, manualLat, manualLng, setAssets, assetProtections])
 
   // Add asset from map click
   const handleAddFromMapClick = useCallback(async () => {
@@ -235,20 +257,20 @@ export default function Locate() {
       lng: clickedPoint.lng,
       sensitivity: 'medium',
     }
-    const isProtected = await checkProtectedArea(clickedPoint.lat, clickedPoint.lng)
-    setProtectionStatus((prev) => ({ ...prev, [id]: isProtected }))
+    const protection = await checkProtectedArea(clickedPoint.lat, clickedPoint.lng)
+    setAssetProtections({ ...assetProtections, [id]: protection })
     setAssets([...assets, newAsset])
     setClickedPoint(null)
-  }, [assets, clickedPoint, setAssets])
+  }, [assets, clickedPoint, setAssets, assetProtections])
 
   // Delete asset
   const handleDeleteAsset = (id: string) => {
     setAssets(assets.filter((a) => a.id !== id))
-    setProtectionStatus((prev) => {
-      const next = { ...prev }
-      delete next[id]
-      return next
-    })
+    setAssetProtections(
+      Object.fromEntries(
+        Object.entries(assetProtections).filter(([key]) => key !== id)
+      )
+    )
     if (selectedAssetId === id) setSelectedAssetId(undefined)
   }
 
@@ -454,11 +476,13 @@ export default function Locate() {
                 <span className="font-semibold text-[#2d5a3d]">{assets.length}</span> 个资产
               </span>
             </div>
-            {Object.values(protectionStatus).some(Boolean) && (
+            {Object.values(assetProtections).some(p => p.inProtected || p.nearProtected) && (
               <div className="flex items-center gap-2 px-4 py-2 bg-[#c9a962]/10 rounded-xl border border-[#c9a962]/20">
                 <Shield className="w-4 h-4 text-[#8a6a2a]" />
                 <span className="text-sm text-[#8a6a2a]">
-                  <span className="font-semibold">{Object.values(protectionStatus).filter(Boolean).length}</span> 个位于保护区
+                  <span className="font-semibold">
+                    {Object.values(assetProtections).filter(p => p.inProtected || p.nearProtected).length}
+                  </span> 个涉及保护区
                 </span>
               </div>
             )}
@@ -469,7 +493,7 @@ export default function Locate() {
               </div>
             )}
             <button
-              onClick={() => { setAssets([]); setSelectedAssetId(undefined); setProtectionStatus({}) }}
+              onClick={() => { setAssets([]); setSelectedAssetId(undefined); setAssetProtections({}) }}
               className="ml-auto text-sm text-[#8a8a7e] hover:text-[#d4736a] transition-colors"
             >
               清除全部
@@ -479,30 +503,34 @@ export default function Locate() {
           {/* Asset Cards */}
           <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {assets.map((asset) => {
-              const isProtected = protectionStatus[asset.id]
+              const protection = assetProtections[asset.id]
+              const hasProtection = protection?.inProtected || protection?.nearProtected
               const isSelected = selectedAssetId === asset.id
               return (
-                <button
+                <div
                   key={asset.id}
+                  role="button"
+                  tabIndex={0}
                   onClick={() => setSelectedAssetId(isSelected ? undefined : asset.id)}
+                  onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setSelectedAssetId(isSelected ? undefined : asset.id) }}
                   className={`
-                    relative p-4 rounded-xl border text-left transition-all
+                    relative p-4 rounded-xl border text-left transition-all cursor-pointer
                     ${isSelected ? 'bg-[#2d5a3d]/5 border-[#2d5a3d]/30 shadow-sm' : 'bg-white border-[#e5e0d8] hover:border-[#4a7c59]/30 hover:shadow-sm'}
                   `}
                 >
                   <div className="flex items-start gap-3">
-                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${isProtected ? 'bg-[#c9a962]/10 text-[#8a6a2a]' : 'bg-[#2d5a3d]/10 text-[#2d5a3d]'}`}>
-                      {isProtected ? <Shield className="w-4 h-4" /> : <MapPin className="w-4 h-4" />}
+                    <div className={`w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 ${hasProtection ? 'bg-[#c9a962]/10 text-[#8a6a2a]' : 'bg-[#2d5a3d]/10 text-[#2d5a3d]'}`}>
+                      {hasProtection ? <Shield className="w-4 h-4" /> : <MapPin className="w-4 h-4" />}
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="font-medium text-[#1a1a18] text-sm truncate">{asset.name}</p>
                       <p className="text-xs text-[#8a8a7e] font-mono mt-0.5">
                         {asset.lat.toFixed(4)}, {asset.lng.toFixed(4)}
                       </p>
-                      {isProtected && (
+                      {hasProtection && (
                         <span className="inline-flex items-center gap-0.5 mt-1 px-1.5 py-0.5 bg-[#c9a962]/10 text-[#8a6a2a] text-xs rounded-full">
                           <Shield className="w-2.5 h-2.5" />
-                          保护区
+                          {protection.inProtected ? '保护区内' : `附近 ${protection.distance}km`}
                         </span>
                       )}
                     </div>
@@ -513,7 +541,7 @@ export default function Locate() {
                   >
                     <Trash2 className="w-3 h-3" />
                   </button>
-                </button>
+                </div>
               )
             })}
           </div>
