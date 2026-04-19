@@ -1,0 +1,344 @@
+{
+  "Other provisioning services - Animal-based energy": {
+    "cn": "动物性能源服务",
+    "description": "提供畜力、动物粪便制成的生物气等动物来源的能源",
+    "category": "生态系统服务",
+    "subcategory": "供给服务",
+    "unit": "GJ km⁻² yr⁻¹",
+    "source": "FAO",
+    "sourceUrl": "https://www.fao.org/faostat/"
+  },
+  "Biomass provisioning": {
+    "cn": "生物质供给",
+    "description": "提供木材、薪柴、纤维作物和其他生物质用于生产、贸易和能源",
+    "category": "生态系统服务",
+    "subcategory": "供给服务",
+    "unit": "t km⁻² yr⁻¹",
+    "source": "FAO",
+    "sourceUrl": "https://www.fao.org/faostat/"
+  },
+  "Solid waste remediation": {
+    "cn": "固体废物治理",
+    "description": "生态系统（微生物、藻类、植物和动物）分解和处理固体废物",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед./год",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Soil and sediment retention": {
+    "cn": "土壤与沉积物保持",
+    "description": "植被防止土壤被风和水侵蚀，减少泥沙淤积",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": "t km⁻² yr⁻¹",
+    "source": "UNEP-WCMC",
+    "sourceUrl": "https://www.unep-wcmc.org/"
+  },
+  "Water purification": {
+    "cn": "水净化",
+    "description": "生态系统通过过滤、降解和吸收去除水中的污染物和营养物",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед./год",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Soil quality regulation": {
+    "cn": "土壤质量调节",
+    "description": "维护土壤肥力、有机质含量和土壤结构，支持农业生产力",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": "index 0-1",
+    "source": "FAO",
+    "sourceUrl": "https://www.fao.org/soils-portal/"
+  },
+  "Other regulating and maintenance service - Dilution by atmosphere and ecosystems": {
+    "cn": "大气与生态系统稀释",
+    "description": "生态系统稀释和扩散污染物，减少其对环境和生物的影响",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Biological control": {
+    "cn": "生物控制",
+    "description": "天敌和天然捕食者控制害虫和病原体，减少农药使用",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "IPBES",
+    "sourceUrl": "https://ipbes.net/"
+  },
+  "Air Filtration": {
+    "cn": "空气过滤",
+    "description": "植被过滤颗粒物（PM10、PM2.5），改善空气质量",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": "µg m⁻³",
+    "source": "IIASA",
+    "sourceUrl": "https://iiasa.ac.at/"
+  },
+  "Flood mitigation services": {
+    "cn": "洪水缓解服务",
+    "description": "湿地、洪泛区和森林滞留雨水，减少洪水峰值流量",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Genetic material": {
+    "cn": "遗传物质",
+    "description": "维护遗传多样性，支持作物和畜牧业的品种改良",
+    "category": "生态系统服务",
+    "subcategory": "支持服务",
+    "unit": " усл. ед.",
+    "source": "FAO / CGIAR",
+    "sourceUrl": "https://www.fao.org/"
+  },
+  "Global climate regulation": {
+    "cn": "全球气候调节",
+    "description": "生态系统碳汇功能调节大气温室气体浓度，减缓气候变化",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": "Mg C km⁻² yr⁻¹",
+    "source": "Carboscope / Woods Hole",
+    "sourceUrl": "https://whrc.org/"
+  },
+  "Water supply": {
+    "cn": "水资源供给",
+    "description": "提供充足数量和质量的淡水资源用于农业、工业和生活",
+    "category": "生态系统服务",
+    "subcategory": "供给服务",
+    "unit": "mm yr⁻¹",
+    "source": "FAO AQUASTAT",
+    "sourceUrl": "https://www.fao.org/aquastat/en/"
+  },
+  "Nursery population and habitat maintenance": {
+    "cn": "苗圃与栖息地维护",
+    "description": "提供繁殖和育苗栖息地，维护物种种群",
+    "category": "生态系统服务",
+    "subcategory": "支持服务",
+    "unit": " усл. ед.",
+    "source": "UNEP-WCMC",
+    "sourceUrl": "https://www.unep-wcmc.org/"
+  },
+  "Noise attenuation": {
+    "cn": "噪声衰减",
+    "description": "植被带和树木隔离带减少交通和工业噪声",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": "dB reduction",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/"
+  },
+  "Other regulating and maintenance service - Mediation of sensory impacts (other than noise)": {
+    "cn": "感官中介服务",
+    "description": "植被遮挡视线、阻隔气味，改善人居环境舒适度",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Local (micro and meso) climate regulation": {
+    "cn": "局地气候调节",
+    "description": "植被和水体调节局部温度、湿度和微气候，减少热应激",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": "°C reduction",
+    "source": "IPCC",
+    "sourceUrl": "https://www.ipcc.ch/"
+  },
+  "Pollination": {
+    "cn": "授粉",
+    "description": "传粉昆虫和野生动物支持农作物和自然植物的有性繁殖",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "IPBES",
+    "sourceUrl": "https://ipbes.net/"
+  },
+  "Storm mitigation": {
+    "cn": "风暴缓解",
+    "description": "沿海红树林、森林带减少风暴和海浪冲击",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Water flow regulation": {
+    "cn": "水流调节",
+    "description": "生态系统调节水文情势，保证干旱期供水并缓解洪峰",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "FAO AQUASTAT",
+    "sourceUrl": "https://www.fao.org/aquastat/en/"
+  },
+  "Rainfall pattern regulation": {
+    "cn": "降雨模式调节",
+    "description": "森林蒸腾和水循环影响区域降水模式",
+    "category": "生态系统服务",
+    "subcategory": "调节服务",
+    "unit": " усл. ед.",
+    "source": "IPCC",
+    "sourceUrl": "https://www.ipcc.ch/"
+  },
+  "Recreation related services": {
+    "cn": "休闲游憩服务",
+    "description": "自然景观、公园和保护区提供户外休闲、旅游和康养",
+    "category": "生态系统服务",
+    "subcategory": "文化服务",
+    "unit": "visitors km⁻² yr⁻¹",
+    "source": "UNEP-WCMC",
+    "sourceUrl": "https://www.unep-wcmc.org/"
+  },
+  "Visual amenity services": {
+    "cn": "视觉美化服务",
+    "description": "自然景观提供美学价值，提升房产价值和生活质量",
+    "category": "生态系统服务",
+    "subcategory": "文化服务",
+    "unit": " усл. ед.",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Education, scientific and research services": {
+    "cn": "教育科研服务",
+    "description": "自然生态系统和保护区提供教育、科研和培训场所",
+    "category": "生态系统服务",
+    "subcategory": "文化服务",
+    "unit": " усл. ед.",
+    "source": "UNESCO",
+    "sourceUrl": "https://www.unesco.org/"
+  },
+  "Spiritual, artistic and symbolic services": {
+    "cn": "精神艺术象征服务",
+    "description": "自然遗产提供精神寄托、艺术灵感和文化认同",
+    "category": "生态系统服务",
+    "subcategory": "文化服务",
+    "unit": " усл. ед.",
+    "source": "UNESCO",
+    "sourceUrl": "https://www.unesco.org/"
+  },
+  "Disturbances (e.g noise, light)": {
+    "cn": "噪声与光干扰",
+    "description": "人类活动产生的噪声和光污染干扰野生动物和社区",
+    "category": "影响驱动因素",
+    "subcategory": "污染/干扰",
+    "unit": "dB / lux",
+    "source": "WHO",
+    "sourceUrl": "https://www.who.int/"
+  },
+  "Area of freshwater use": {
+    "cn": "淡水资源利用面积",
+    "description": "农业、工业取水占用淡水生态系统面积",
+    "category": "影响驱动因素",
+    "subcategory": "资源开采",
+    "unit": "km²",
+    "source": "FAO AQUASTAT",
+    "sourceUrl": "https://www.fao.org/aquastat/en/"
+  },
+  "Emissions of GHG": {
+    "cn": "温室气体排放",
+    "description": "CO₂、CH₄、N₂O等温室气体排放导致气候变化",
+    "category": "影响驱动因素",
+    "subcategory": "气候变化",
+    "unit": "Mt CO₂ eq yr⁻¹",
+    "source": "EDGAR / IPCC",
+    "sourceUrl": "https://edgar.jrc.ec.europa.eu/"
+  },
+  "Area of seabed use": {
+    "cn": "海底利用面积",
+    "description": "海洋工程、养殖和捕捞占用海底生态系统",
+    "category": "影响驱动因素",
+    "subcategory": "海洋利用",
+    "unit": "km²",
+    "source": "FAO",
+    "sourceUrl": "https://www.fao.org/"
+  },
+  "Emissions of non-GHG air pollutants": {
+    "cn": "非温室气体空气污染物排放",
+    "description": "SO₂、NOx、VOCs等污染物影响空气质量和人体健康",
+    "category": "影响驱动因素",
+    "subcategory": "污染",
+    "unit": "Gg yr⁻¹",
+    "source": "IIASA",
+    "sourceUrl": "https://iiasa.ac.at/"
+  },
+  "Other biotic resource extraction (e.g. fish, timber)": {
+    "cn": "生物资源开采",
+    "description": "过度捕捞、非法伐木等导致生物资源枯竭",
+    "category": "影响驱动因素",
+    "subcategory": "资源开采",
+    "unit": "t yr⁻¹",
+    "source": "FAO",
+    "sourceUrl": "https://www.fao.org/fishery/"
+  },
+  "Other abiotic resource extraction": {
+    "cn": "非生物资源开采",
+    "description": "采矿、采石等开采活动破坏土地和生态系统",
+    "category": "影响驱动因素",
+    "subcategory": "资源开采",
+    "unit": " усл. ед.",
+    "source": "USGS",
+    "sourceUrl": "https://www.usgs.gov/"
+  },
+  "Emissions of toxic soil and water pollutants": {
+    "cn": "有毒土壤和水污染物排放",
+    "description": "重金属、有机污染物在土壤和水体中累积",
+    "category": "影响驱动因素",
+    "subcategory": "污染",
+    "unit": "t yr⁻¹",
+    "source": "UNEP",
+    "sourceUrl": "https://www.unep.org/"
+  },
+  "Emissions of nutrient soil and water pollutants": {
+    "cn": "营养性土壤和水污染物排放",
+    "description": "氮磷流失导致富营养化、水华和土壤退化",
+    "category": "影响驱动因素",
+    "subcategory": "污染",
+    "unit": "t N/P yr⁻¹",
+    "source": "FAO / UNEP",
+    "sourceUrl": "https://www.fao.org/"
+  },
+  "Generation and release of solid waste": {
+    "cn": "固体废物产生与排放",
+    "description": "固体废物和有害废物的产生、处置和泄漏",
+    "category": "影响驱动因素",
+    "subcategory": "废物",
+    "unit": "t yr⁻¹",
+    "source": "World Bank",
+    "sourceUrl": "https://data.worldbank.org/"
+  },
+  "Area of land use": {
+    "cn": "土地利用面积",
+    "description": "建设用地、农业用地占用自然生态系统面积",
+    "category": "影响驱动因素",
+    "subcategory": "土地利用",
+    "unit": "km²",
+    "source": "ESA Copernicus",
+    "sourceUrl": "https://www.esa-landcover-cci.org/"
+  },
+  "Volume of water use": {
+    "cn": "水资源利用量",
+    "description": "取水量与可更新水资源量之比",
+    "category": "影响驱动因素",
+    "subcategory": "资源开采",
+    "unit": "km³ yr⁻¹",
+    "source": "FAO AQUASTAT",
+    "sourceUrl": "https://www.fao.org/aquastat/en/"
+  },
+  "Introduction of invasive species": {
+    "cn": "外来物种入侵",
+    "description": "外来入侵物种挤占本地物种生态位，破坏生态平衡",
+    "category": "影响驱动因素",
+    "subcategory": "生物入侵",
+    "unit": " усл. ед.",
+    "source": "IUCN",
+    "sourceUrl": "https://www.iucn.org/"
+  }
+}

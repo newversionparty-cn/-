@@ -1,0 +1,461 @@
+{
+  "sectors": [
+    {
+      "isic": "A_1_14_141",
+      "name": "Raising of cattle and buffaloes",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_14_142",
+      "name": "Raising of horses and other equines",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_14_143",
+      "name": "Raising of camels and camelids",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_14_144",
+      "name": "Raising of sheep and goats",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_14_149",
+      "name": "Raising of other animals",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_14_145",
+      "name": "Raising of swine/pigs",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_14_146",
+      "name": "Raising of poultry",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_11_111",
+      "name": "Growing of cereals (except rice), leguminous crops and oil seeds",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_11_112",
+      "name": "Growing of rice",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_11_113",
+      "name": "Growing of vegetables and melons, roots and tubers",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_11_114",
+      "name": "Growing of sugar cane",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_11_115",
+      "name": "Growing of tobacco",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_11_116",
+      "name": "Growing of fibre crops",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_11_119",
+      "name": "Growing of other non-perennial crops",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_16_163",
+      "name": "Post-harvest crop activities",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_16_164",
+      "name": "Seed processing for propagation",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_16_161",
+      "name": "Support activities for crop production",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "A_1_16_162",
+      "name": "Support activities for animal production",
+      "category": "农林牧渔",
+      "categoryCode": "A"
+    },
+    {
+      "isic": "C_20_201_2011",
+      "name": "Manufacture of basic chemicals",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_20_201_2013",
+      "name": "Manufacture of plastics and synthetic rubber in primary forms",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_20_201_2012",
+      "name": "Manufacture of fertilizers and nitrogen compounds",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_11_110_1101",
+      "name": "Distilling, rectifying and blending of spirits",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_11_110_1103",
+      "name": "Manufacture of malt liquors and malt",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_11_110_1102",
+      "name": "Manufacture of wines",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_11_110_1104",
+      "name": "Manufacture of soft drinks; production of mineral waters and other bottled waters",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_10_104_1040",
+      "name": "Manufacture of vegetable and animal oils and fats",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_10_102_1020",
+      "name": "Processing and preserving of fish, crustaceans and molluscs",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_10_103_1030",
+      "name": "Processing and preserving of fruit and vegetables",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "C_10_101_1010",
+      "name": "Processing and preserving of meat",
+      "category": "制造业",
+      "categoryCode": "C"
+    },
+    {
+      "isic": "D_35_351",
+      "name": "Fossil fuels energy production",
+      "category": "能源行业",
+      "categoryCode": "D"
+    },
+    {
+      "isic": "H_52_522_5223",
+      "name": "Service activities incidental to air transportation",
+      "category": "交通运输",
+      "categoryCode": "H"
+    },
+    {
+      "isic": "H_52_522_5224",
+      "name": "Cargo handling",
+      "category": "交通运输",
+      "categoryCode": "H"
+    },
+    {
+      "isic": "H_52_522_5229",
+      "name": "Other transportation support activities",
+      "category": "交通运输",
+      "categoryCode": "H"
+    },
+    {
+      "isic": "H_52_522_5221",
+      "name": "Service activities incidental to land transportation",
+      "category": "交通运输",
+      "categoryCode": "H"
+    },
+    {
+      "isic": "H_52_522_5222",
+      "name": "Service activities incidental to water transportation",
+      "category": "交通运输",
+      "categoryCode": "H"
+    },
+    {
+      "isic": "N_79_791_7911",
+      "name": "Travel agency activities",
+      "category": "商务服务",
+      "categoryCode": "N"
+    },
+    {
+      "isic": "N_79_791_7912",
+      "name": "Tour operator activities",
+      "category": "商务服务",
+      "categoryCode": "N"
+    }
+  ],
+  "grouped": {
+    "农林牧渔": [
+      {
+        "isic": "A_1_14_141",
+        "name": "Raising of cattle and buffaloes",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_14_142",
+        "name": "Raising of horses and other equines",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_14_143",
+        "name": "Raising of camels and camelids",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_14_144",
+        "name": "Raising of sheep and goats",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_14_149",
+        "name": "Raising of other animals",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_14_145",
+        "name": "Raising of swine/pigs",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_14_146",
+        "name": "Raising of poultry",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_11_111",
+        "name": "Growing of cereals (except rice), leguminous crops and oil seeds",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_11_112",
+        "name": "Growing of rice",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_11_113",
+        "name": "Growing of vegetables and melons, roots and tubers",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_11_114",
+        "name": "Growing of sugar cane",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_11_115",
+        "name": "Growing of tobacco",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_11_116",
+        "name": "Growing of fibre crops",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_11_119",
+        "name": "Growing of other non-perennial crops",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_16_163",
+        "name": "Post-harvest crop activities",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_16_164",
+        "name": "Seed processing for propagation",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_16_161",
+        "name": "Support activities for crop production",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      },
+      {
+        "isic": "A_1_16_162",
+        "name": "Support activities for animal production",
+        "section": "Agriculture, forestry and fishing",
+        "category": "农林牧渔"
+      }
+    ],
+    "制造业": [
+      {
+        "isic": "C_20_201_2011",
+        "name": "Manufacture of basic chemicals",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_20_201_2013",
+        "name": "Manufacture of plastics and synthetic rubber in primary forms",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_20_201_2012",
+        "name": "Manufacture of fertilizers and nitrogen compounds",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_11_110_1101",
+        "name": "Distilling, rectifying and blending of spirits",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_11_110_1103",
+        "name": "Manufacture of malt liquors and malt",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_11_110_1102",
+        "name": "Manufacture of wines",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_11_110_1104",
+        "name": "Manufacture of soft drinks; production of mineral waters and other bottled waters",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_10_104_1040",
+        "name": "Manufacture of vegetable and animal oils and fats",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_10_102_1020",
+        "name": "Processing and preserving of fish, crustaceans and molluscs",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_10_103_1030",
+        "name": "Processing and preserving of fruit and vegetables",
+        "section": "Manufacturing",
+        "category": "制造业"
+      },
+      {
+        "isic": "C_10_101_1010",
+        "name": "Processing and preserving of meat",
+        "section": "Manufacturing",
+        "category": "制造业"
+      }
+    ],
+    "能源行业": [
+      {
+        "isic": "D_35_351",
+        "name": "Fossil fuels energy production",
+        "section": "Electricity, gas, steam and air conditioning supply",
+        "category": "能源行业"
+      }
+    ],
+    "交通运输": [
+      {
+        "isic": "H_52_522_5223",
+        "name": "Service activities incidental to air transportation",
+        "section": "Transportation and storage",
+        "category": "交通运输"
+      },
+      {
+        "isic": "H_52_522_5224",
+        "name": "Cargo handling",
+        "section": "Transportation and storage",
+        "category": "交通运输"
+      },
+      {
+        "isic": "H_52_522_5229",
+        "name": "Other transportation support activities",
+        "section": "Transportation and storage",
+        "category": "交通运输"
+      },
+      {
+        "isic": "H_52_522_5221",
+        "name": "Service activities incidental to land transportation",
+        "section": "Transportation and storage",
+        "category": "交通运输"
+      },
+      {
+        "isic": "H_52_522_5222",
+        "name": "Service activities incidental to water transportation",
+        "section": "Transportation and storage",
+        "category": "交通运输"
+      }
+    ],
+    "商务服务": [
+      {
+        "isic": "N_79_791_7911",
+        "name": "Travel agency activities",
+        "section": "Administrative and support service activities",
+        "category": "商务服务"
+      },
+      {
+        "isic": "N_79_791_7912",
+        "name": "Tour operator activities",
+        "section": "Administrative and support service activities",
+        "category": "商务服务"
+      }
+    ]
+  },
+  "count": 37
+}
