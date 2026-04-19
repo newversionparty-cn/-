@@ -9,7 +9,15 @@
 
 TNFD LEAP 是基于 **TNFD v1.0 框架** 和 **LEAP 方法论**（Locate → Evaluate → Assess → Prepare）构建的自动化披露工具，帮助中国 NGO 和中小企业快速完成自然相关财务信息披露。
 
-![TNFD LEAP 界面预览](public/screenshots/tnfd-leap-preview.png)
+## 界面预览
+
+| L - 定位资产 | E - 行业评价 |
+|:---:|:---:|
+| ![L - 定位资产](public/screenshots/01-locate.png) | ![E - 行业评价](public/screenshots/02-evaluate.png) |
+
+| A - AI 评估 | P - 报告生成 |
+|:---:|:---:|
+| ![A - AI 评估](public/screenshots/03-assess.png) | ![P - 报告生成](public/screenshots/04-prepare.png) |
 
 ## 核心功能
 
