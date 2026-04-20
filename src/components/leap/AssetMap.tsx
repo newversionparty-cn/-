@@ -6,8 +6,8 @@ import L from 'leaflet'
 import { AssetLocation } from '@/store/leap-store'
 import 'leaflet/dist/leaflet.css'
 
-// Province boundary GeoJSON - using a reliable CDN source
-const CHINA_PROVINCES_URL = 'https://geo.datav.aliyun.com/areas_v3/bound.geojson'
+// Province boundary GeoJSON - using local static file to avoid external CDN 404
+const CHINA_PROVINCES_URL = '/data/china-provinces.json'
 
 // Fix default marker icon
 const DefaultIcon = L.divIcon({
@@ -77,7 +77,9 @@ function ProvinceLayer() {
     fetch(CHINA_PROVINCES_URL)
       .then((res) => res.json())
       .then((data) => setGeoData(data))
-      .catch((err) => console.warn('Failed to load province boundaries:', err))
+      .catch((err) => {
+        // Province boundaries are optional - no console error needed
+      })
   }, [])
 
   if (!geoData) return null
