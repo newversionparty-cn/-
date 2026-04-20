@@ -6,8 +6,8 @@ import L from 'leaflet'
 import { AssetLocation } from '@/store/leap-store'
 import 'leaflet/dist/leaflet.css'
 
-// Province boundary GeoJSON - using local static file to avoid external CDN 404
-const CHINA_PROVINCES_URL = '/data/china-provinces.json'
+// Province boundary GeoJSON - using DataV GeoAtlas API (confirmed working: 200 OK)
+const CHINA_PROVINCES_URL = 'https://geo.datav.aliyun.com/areas_v3/bound/100000_full.json'
 
 // Fix default marker icon
 const DefaultIcon = L.divIcon({

@@ -36,14 +36,74 @@ async function geocodeLocation(query: string): Promise<{ lat: number; lng: numbe
   return null
 }
 
-// WDPA API check - returns protection status with distance
-// Note: Requires network access to api.protectedplanet.net (port 443)
-// If blocked, falls back to simulated data based on known protected area regions
+// WDPA check using Turf.js for spatial analysis
+// Loads protected areas from local GeoJSON if available, with fallback to known regions
 async function checkProtectedArea(lat: number, lng: number): Promise<AssetProtection> {
   const NEAR_THRESHOLD_KM = 50
 
-  // Known protected area clusters in China (approximate bounding boxes)
-  // These are simplified regions where WDPA data would show protected areas
+  // Try loading local protected areas GeoJSON (user prepares this from OSM)
+  let localDataExists = false
+  try {
+    const res = await fetch('/data/wdpa_china_simplified.json', { method: 'HEAD' })
+    localDataExists = res.ok
+  } catch {}
+
+  if (localDataExists) {
+    try {
+      const turf = await import('@turf/turf')
+      const geoData = await fetch('/data/wdpa_china_simplified.json').then(r => r.json())
+
+      const point = turf.point([lng, lat]) // Turf.js uses [lon, lat] order
+
+      const features = (geoData.features || []) as Array<any>
+
+      // Check if point is inside any protected area
+      let inProtected = false
+      let nearProtected = false
+      let minDistance = Infinity
+
+      for (const feature of features) {
+        if (!feature || !feature.geometry) continue
+        try {
+          if (turf.booleanPointInPolygon(point, feature)) {
+            inProtected = true
+            break
+          }
+        } catch {}
+      }
+
+      // 50km buffer analysis
+      const buffer = turf.buffer(point, 50, { units: 'kilometers' }) as any
+      for (const feature of features) {
+        if (!feature || !feature.geometry) continue
+        try {
+          if (turf.booleanIntersects(buffer, feature)) {
+            nearProtected = true
+            break
+          }
+        } catch {}
+      }
+
+      // Calculate actual distance to nearest boundary
+      for (const feature of features) {
+        if (!feature || !feature.geometry) continue
+        try {
+          const distance = turf.pointToPolygonDistance(point, feature, { units: 'kilometers' })
+          if (distance < minDistance) minDistance = distance
+        } catch {}
+      }
+
+      return {
+        inProtected,
+        nearProtected,
+        distance: minDistance === Infinity ? -1 : Math.round(minDistance * 10) / 10,
+      }
+    } catch {
+      // Turf.js analysis failed, fall through to fallback
+    }
+  }
+
+  // Fallback: Known protected area clusters in China
   const KNOWN_PROTECTED_REGIONS = [
     { name: '神农架', lat: 31.5, lng: 110.5, radiusKm: 50 },
     { name: '卧龙', lat: 30.8, lng: 103.0, radiusKm: 40 },
@@ -57,7 +117,6 @@ async function checkProtectedArea(lat: number, lng: number): Promise<AssetProtec
     { name: '大熊猫栖息地', lat: 30.5, lng: 105.0, radiusKm: 70 },
   ]
 
-  // Check if point is near any known protected area cluster
   let minDistance = Infinity
   let nearProtected = false
 
@@ -70,33 +129,6 @@ async function checkProtectedArea(lat: number, lng: number): Promise<AssetProtec
       if (distanceKm < minDistance) minDistance = distanceKm
       if (distanceKm <= NEAR_THRESHOLD_KM) nearProtected = true
     }
-  }
-
-  // Try actual API call in background (won't block if network unavailable)
-  try {
-    const controller = new AbortController()
-    const timeoutId = setTimeout(() => controller.abort(), 3000) // 3s timeout
-
-    const response = await fetch(
-      `https://apiv3.protectedplanet.net/v3/protected-areas?latitude=${lat}&longitude=${lng}&per_page=5`,
-      { signal: controller.signal }
-    )
-    clearTimeout(timeoutId)
-
-    if (response.ok) {
-      const data = await response.json()
-      if (data.results && data.results.length > 0) {
-        for (const pa of data.results) {
-          const dist = pa.distance || pa.distance_to_boundary || -1
-          if (dist >= 0 && dist < minDistance) {
-            minDistance = dist
-            if (dist <= 0) nearProtected = true
-          }
-        }
-      }
-    }
-  } catch {
-    // Network blocked or timeout - use local approximation
   }
 
   const inProtected = minDistance <= 0
