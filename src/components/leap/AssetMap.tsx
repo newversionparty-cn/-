@@ -85,11 +85,11 @@ function ProvinceLayer() {
   if (!geoData) return null
 
   const provinceStyle: L.PathOptions = {
-    fillColor: '#4a7c59',
-    fillOpacity: 0.08,
-    color: '#2d5a3d',
-    weight: 1.5,
-    opacity: 0.6,
+    fillColor: '#ffffff',
+    fillOpacity: 0.03,
+    color: '#d1d5db',
+    weight: 1,
+    opacity: 0.4,
   }
 
   const onEachFeature = (feature: any, layer: L.Layer) => {
@@ -99,6 +99,10 @@ function ProvinceLayer() {
         direction: 'center',
         className: 'province-label',
       })
+    }
+    // Use Leaflet's interactive option to disable click events on polygon
+    if ('interactive' in layer.options) {
+      (layer.options as any).interactive = false
     }
   }
 
